@@ -1,8 +1,8 @@
 #www.lasseclausen.com/lab/
 #Use at your own risk
 """
-Name-US:ReplaceRendersettingsFromScene
-Description-US:Replaces current Render-Settings from another Scene. Very useful for huge scenes!
+Name-US:Replace Current Rendersettings From Scene
+Description-US:Replace Rendersettings from another Scene. Very useful for huge scenes!
 """
 import c4d
 
@@ -47,7 +47,10 @@ def ReplaceRendersettingsFromScene(scene):
     c4d.StatusClear()
 
 def main():
-    scene = r"H:\01_Projects\LasseProjects\Ford_SH20_v14_Redshift.c4d" #1,6GB for example
+    #Select a huge scene for fun.
+    scene = c4d.storage.LoadDialog(c4d.FILESELECTTYPE_SCENES, "Select your rendersettings file.", c4d.FILESELECT_LOAD)
+    if not scene:
+        return
     ReplaceRendersettingsFromScene(scene)
 
 if __name__=='__main__':
