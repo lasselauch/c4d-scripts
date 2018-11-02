@@ -6,7 +6,7 @@ Description-US:Replace Rendersettings from another Scene. Very useful for huge s
 """
 import c4d
 
-def ReplaceRendersettingsFromScene(scene):
+def ReplaceRendersettingsFromScene(scene, append=True):
     c4d.StatusSetSpin()
     message = """Replacing current Render-Settings from: %s""" % (scene)
     c4d.StatusSetText(message)
@@ -30,13 +30,15 @@ def ReplaceRendersettingsFromScene(scene):
         rd = rd.GetNext()
 
     doc.StartUndo()
-    for rd in current_rd:
-        doc.AddUndo(c4d.UNDOTYPE_DELETE, rd)
-        rd.Remove()
+
+    if not append:
+        for rd in current_rd:
+            doc.AddUndo(c4d.UNDOTYPE_DELETE, rd)
+            rd.Remove()
 
     for trd in reversed(clones):
         doc.AddUndo(c4d.UNDOTYPE_NEW, trd)
-        doc.InsertRenderData(trd)
+        doc.InsertRenderDataLast(trd)
         if trd.GetData() == active.GetData():
             doc.SetActiveRenderData(trd)
 
@@ -47,11 +49,23 @@ def ReplaceRendersettingsFromScene(scene):
     c4d.StatusClear()
 
 def main():
+    ctrl = False
+    bc = c4d.BaseContainer()
+    c4d.gui.GetInputState(c4d.BFM_INPUT_KEYBOARD, c4d.BFM_INPUT_CHANNEL, bc)
+    if bc[c4d.BFM_INPUT_QUALIFIER]==2:
+        ctrl = True
+
     #Select a huge scene for fun.
     scene = c4d.storage.LoadDialog(c4d.FILESELECTTYPE_SCENES, "Select your rendersettings file.", c4d.FILESELECT_LOAD)
     if not scene:
         return
-    ReplaceRendersettingsFromScene(scene)
+
+    #DEFAULT: APPEND RENDERSETTINGS
+    ReplaceRendersettingsFromScene(scene, True)
+
+    #CTRL-CLICK: OVERWRITE RENDERSETTINGS
+    if ctrl:
+        ReplaceRendersettingsFromScene(scene, False)
 
 if __name__=='__main__':
     main()
