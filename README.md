@@ -5,9 +5,8 @@ Scripts for Script-Manager:
 ---
 <b>copy-spline-points-for-houdini-curves-node.py</b></br>
 ![<gif>](https://github.com/lasselauch/c4d-scripts/blob/master/img/copy-spline-points-for-houdini-curves-node.gif)</br>
-Let's you copy your Spline Points to your clipboard for Houdini's Curve Node</br>
+Copy the position of Spline Points to your clipboard and easily paste them into Houdini's Curve Node.</br>
 
-https://twitter.com/lasse_lauch/status/1055150737750134784</br>
 https://twitter.com/lasse_lauch/status/1058057404431110146</br>
 
 ---
