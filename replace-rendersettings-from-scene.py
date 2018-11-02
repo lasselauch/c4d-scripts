@@ -47,7 +47,7 @@ def ReplaceRendersettingsFromScene(scene):
     c4d.StatusClear()
 
 def main():
-    scene = r"H:\01_Projects\LasseProjects\Ford_SH20_v14_Redshift.c4d"
+    scene = r"H:\01_Projects\LasseProjects\Ford_SH20_v14_Redshift.c4d" #1,6GB for example
     ReplaceRendersettingsFromScene(scene)
 
 if __name__=='__main__':
