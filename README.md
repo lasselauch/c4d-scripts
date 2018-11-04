@@ -11,4 +11,8 @@ https://twitter.com/lasse_lauch/status/1058057404431110146</br>
 
 ---
 <b>replace-rendersettings-from-scene.py</b></br>
-Replace Rendersettings from another Scene. <u>Very useful</u> for <b>huge</b> scenes ( >1GB ). It can be a pain to load the whole scene into memory, if you just want to copy the rendersettings. This will speed up the process because it's only loading the rendersettings from that file.</br>
+Replace Rendersettings from another Scene. <u>Very useful</u> for <b>huge</b> scenes ( >1GB ). It can be a pain to load the whole scene into memory, if you just want to copy the rendersettings. This will speed up the process by a ton, because it's only loading the rendersettings from that file.</br></br>
+<b>DEFAULT-CLICK: APPEND RENDERSETTINGS</b></br>
+<b>CTRL-CLICK: OVERWRITE RENDERSETTINGS</b></br>
+
+---
