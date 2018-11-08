@@ -4,12 +4,14 @@ My collection of Cinema 4D scripts
 Scripts for Script-Manager:
 ---
 
+### Copy & Paste Splines between C4D & Houdini
+
 ![<gif>](https://github.com/lasselauch/c4d-scripts/blob/master/img/copy_paste_splines_c4d-houdini.gif)</br>
-![<icon>](https://github.com/lasselauch/c4d-scripts/blob/master/copy-spline-points-for-houdini-curves-node.tif) <b>copy-spline-points-for-houdini-curves-node.py</b></br>
+![<icon>](https://github.com/lasselauch/c4d-scripts/blob/master/img/copy-spline-points-for-houdini-curves-node.png) <b>copy-spline-points-for-houdini-curves-node.py</b></br>
 Copy the position of Spline Points to your clipboard and easily paste them into Houdini's Curve Node.</br>
 
 https://twitter.com/lasse_lauch/status/1058057404431110146</br>
-![<icon>](https://github.com/lasselauch/c4d-scripts/blob/master/paste-spline-from-houdini-geometry-spreadsheet.tif) <b>paste-spline-from-houdini-geometry-spreadsheet.py</b></br>
+![<icon>](https://github.com/lasselauch/c4d-scripts/blob/master/img/paste-spline-from-houdini-geometry-spreadsheet.png) <b>paste-spline-from-houdini-geometry-spreadsheet.py</b></br>
 Use "Copy Selection as Text" from Houdini's Geometry Spreadsheet to paste a new Spline into C4D.</br>
 
 ---
