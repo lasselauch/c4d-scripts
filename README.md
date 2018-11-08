@@ -4,7 +4,7 @@ My collection of Cinema 4D scripts
 Scripts for Script-Manager:
 ---
 
-![<gif>](../blob/master/img/copy_paste_splines_c4d-houdini.gif)</br>
+![<gif>](https://github.com/lasselauch/c4d-scripts/blob/master/img/copy_paste_splines_c4d-houdini.gif)</br>
 <b>copy-spline-points-for-houdini-curves-node.py</b></br>
 Copy the position of Spline Points to your clipboard and easily paste them into Houdini's Curve Node.</br>
 
