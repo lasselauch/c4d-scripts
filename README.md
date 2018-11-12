@@ -15,7 +15,14 @@ Use "Copy Selection as Text" from Houdini's Geometry Spreadsheet to paste a new 
 ---
 ## replace-rendersettings-from-scene.py
 Replace Rendersettings from another Scene. <u>Very useful</u> for <b>huge</b> scenes ( >1GB ). It can be a pain to load the whole scene into memory, if you just want to copy the rendersettings. This will speed up the process by a ton, because it's only loading the rendersettings from that file.</br></br>
-<b>DEFAULT-CLICK: APPEND RENDERSETTINGS</b></br>
-<b>CTRL-CLICK: OVERWRITE RENDERSETTINGS</b></br>
+<b>[ DEFAULT ] APPEND RENDERSETTINGS</b></br>
+<b>[ CTRL-CLICK ] OVERWRITE RENDERSETTINGS</b></br>
+
+---
+## act-on-same-object-type.py
+Scan scene for same Object-Types and _act_ on it...</br></br>
+<b>[ DEFAULT ] Select same Object-Types</b></br>
+<b>[ CTRL-CLICK ] Turn same Object-Types to OFF</b></br>
+<b>[ ALT-CLICK ] Turn same Object-Types to DEFAULT</b></br>
 
 ---
