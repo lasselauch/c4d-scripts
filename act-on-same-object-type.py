@@ -1,4 +1,4 @@
-#www.lasseclausen.com/lab/
+#www.lasselauch.com/lab/
 #Use at your own risk
 """
 Name-US:Act on same Object-Types
