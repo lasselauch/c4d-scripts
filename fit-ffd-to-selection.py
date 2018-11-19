@@ -1,6 +1,6 @@
 #www.lasselauch.com/lab/
 #Use at your own risk
-#Known Limitations: Doesn't respect Normal-Rotation
+#Known Limitations: Doesn't respect Normal-Orientation
 import c4d
 
 def Command_Split(op):
@@ -12,10 +12,10 @@ def Command_Split(op):
 def main():
     if op is None:
         return
-    
+
     #Run Split Command
     s = Command_Split(op)
-    
+
     #Insert FFD-Deformer under Split-Object and Fit
     ffd = c4d.BaseObject(c4d.Offd)
     doc.AddUndo(c4d.UNDOTYPE_NEW, ffd)
@@ -27,7 +27,7 @@ def main():
     clone = ffd.GetClone()
     doc.AddUndo(c4d.UNDOTYPE_NEW, clone)
     clone.InsertUnder(op)
-    
+
     #Remove Split-Object
     doc.AddUndo(c4d.UNDOTYPE_DELETE, ffd)
     s.Remove()
