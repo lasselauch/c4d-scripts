@@ -29,7 +29,7 @@ def main():
     clone.InsertUnder(op)
 
     #Remove Split-Object
-    doc.AddUndo(c4d.UNDOTYPE_DELETE, ffd)
+    doc.AddUndo(c4d.UNDOTYPE_DELETE, s)
     s.Remove()
 
     c4d.EventAdd()
