@@ -26,3 +26,6 @@ Scan scene for same Object-Types and _act_ on it...</br></br>
 <b>[ ALT-CLICK ] Turn same Object-Types to DEFAULT</b></br>
 
 ---
+## fit-ffd-to-selection.py
+Select some Polygons and _run_ the Script:</br>
+It adds an FFD-Deformer to your selected Object that fits the current Polygon-Selection.</br></br>
