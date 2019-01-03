@@ -1,0 +1,7 @@
+# Make sure to paste only paths to Directories
+# You can disable paths with a '#' in front of the line
+
+E:\__Textures\HDRI_HAVEN
+E:\__Textures\HDRI_HAVEN\studio_small
+#E:\__Textures\HDRs\HDR_RealEnvironment\Interior_HDRI_Free_Pack_by_Maxime_Roz
+E:\__Textures\HDRs\HDR_RealEnvironment\Interior_HDRI_Free_Pack_by_Maxime_Roz

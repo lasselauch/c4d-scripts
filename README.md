@@ -13,6 +13,19 @@ https://twitter.com/lasse_lauch/status/1058057404431110146</br>
 Use "Copy Selection as Text" from Houdini's Geometry Spreadsheet to paste a new Spline into C4D.</br>
 
 ---
+# A free HDRI-Link for Redshift:
+### RS_HDR-LINK
+![<icon>](./img/rs_hdrlink.png)<b>rs_hdrlink.py</b></br>
+
+Download or Clone the Folder <code>rs_hdrlink</code> and add it to your Script-Arsenal for C4D.
+
+In the <code>res</code> Folder you'll find <code>local_favorites.txt</code> edit to add your favorite HDR-Directories to the Dropdown.
+
+---
+## redshifttag-displacement-scale.py
+Multiply the Displacement-Scale of all Redshift-Tags in your Scene by a given Input-Value.
+
+---
 ## replace-rendersettings-from-scene.py
 Replace Rendersettings from another Scene. <u>Very useful</u> for <b>huge</b> scenes ( >1GB ). It can be a pain to load the whole scene into memory, if you just want to copy the rendersettings. This will speed up the process by a ton, because it's only loading the rendersettings from that file.</br></br>
 <b>[ DEFAULT ] APPEND RENDERSETTINGS</b></br>
