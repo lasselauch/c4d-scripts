@@ -2,8 +2,8 @@
 ## My collection of Cinema 4D scripts
 
 # A free HDRI-Link for C4D (Redshift only):
-<p align = "center">
 ![<icon>](./img/rs_hdrlink.png)<b>rs_hdrlink.py</b></br>
+<p align = "center">
 <br>Download or Clone the Folder <code>rs_hdrlink</code> and add it to your Script-Arsenal for C4D.</p>
 
 ![<gif>](./img/RS_HDRLink_Overview_s.gif)</br></br>
