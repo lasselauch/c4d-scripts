@@ -3,7 +3,7 @@
 
 # A free HDRI-Link for C4D (Redshift only):
 <p align = "center">
-<img src="https://github.com/lasselauch/c4d-scripts/blob/master/img/rs_hdrlink.png?raw=true" alt="rs_hdrlink.png"/><b>rs_hdrlink.py</b></br>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/img/rs_hdrlink.png?raw=true" alt="rs_hdrlink.png"/><br>
 <br>Download or Clone the Folder <code>rs_hdrlink</code> and add it to your Script-Arsenal for C4D.</p>
 
 ![<gif>](./img/RS_HDRLink_Overview_s.gif)</br></br>
