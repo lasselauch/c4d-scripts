@@ -3,5 +3,5 @@
 
 E:\__Textures\HDRI_HAVEN
 E:\__Textures\HDRI_HAVEN\studio_small
-#E:\__Textures\HDRs\HDR_RealEnvironment\Interior_HDRI_Free_Pack_by_Maxime_Roz
 E:\__Textures\HDRs\HDR_RealEnvironment\Interior_HDRI_Free_Pack_by_Maxime_Roz
+#E:\__Textures\HDRs\HDR_Studio\HDRi_Pack_3_by_zbyg

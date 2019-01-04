@@ -1,7 +1,7 @@
 #www.lasselauch.com/lab/
 #Use at your own risk
 """
-Name-US:Insert RS_HDRLink
+Name-US:RS_HDRLink
 Description-US:Insert RS_HDRLink-Tag for Dome Light.
 """
 

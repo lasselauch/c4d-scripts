@@ -13,13 +13,17 @@ https://twitter.com/lasse_lauch/status/1058057404431110146</br>
 Use "Copy Selection as Text" from Houdini's Geometry Spreadsheet to paste a new Spline into C4D.</br>
 
 ---
-# A free HDRI-Link for Redshift:
-### RS_HDR-LINK
+# A free HDRI-Link for C4D (Redshift only):
+<p align = "center">
 ![<icon>](./img/rs_hdrlink.png)<b>rs_hdrlink.py</b></br>
+<br>Download or Clone the Folder <code>rs_hdrlink</code> and add it to your Script-Arsenal for C4D.</p>
 
-Download or Clone the Folder <code>rs_hdrlink</code> and add it to your Script-Arsenal for C4D.
+![<gif>](./img/RS_HDRLink_Overview_s.gif)</br></br>
 
-In the <code>res</code> Folder you'll find <code>local_favorites.txt</code> edit to add your favorite HDR-Directories to the Dropdown.
+The Script will add a new Light Dome with the Python-Tag to your Scene unless you have one selected, then it will only change the path in the Python-Tag.
+
+![<gif>](./img/RS_HDRLink_LocalFavorites.gif)</br></br>
+In the <code>res</code> Folder you'll find <code>local_favorites.txt</code> edit it to add your favorite HDR-Directories to your new favorite Dropdown.
 
 ---
 ## redshifttag-displacement-scale.py
