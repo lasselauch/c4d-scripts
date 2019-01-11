@@ -9,4 +9,9 @@
 <br>
 <br>Download or Clone the Folder <code>open-folder</code> and add it to your Script-Arsenal for C4D.
 <br><br>
-Shortcut to open your Project, Render-Folder and Open in Viewer.</p>
+Shortcut to open your Project, Render-Folder and Open in Viewer.<br>
+<br>
+You only need to change the path to your favourite Viewer __[Line:13]__:
+<br>
+`VIEWER = r"C:\Program Files\djv-1.1.0-Windows-64\bin\djv_view.exe'`
+</p>
