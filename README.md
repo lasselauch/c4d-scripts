@@ -27,6 +27,14 @@ https://twitter.com/lasse_lauch/status/1058057404431110146</br>
 Use "Copy Selection as Text" from Houdini's Geometry Spreadsheet to paste a new Spline into C4D.</br>
 
 ---
+# [Quick-Folder](https://github.com/lasselauch/c4d-scripts/tree/master/quick-folder)
+##### Shortcut to open your Project, Render-Folder and Open in Viewer.
+
+---
+# [C4D Copy/Paste](https://github.com/lasselauch/c4d-scripts/tree/master/c4d-copy-paste)
+##### Quickly copy Objects between different C4D-Versions.
+
+---
 ## redshifttag-displacement-scale.py
 Multiply the Displacement-Scale of all Redshift-Tags in your Scene by a given Input-Value.
 
