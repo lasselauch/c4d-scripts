@@ -1,6 +1,6 @@
 # Quick-Folder:
 <p align = "center">
-<img src="https://github.com/lasselauch/c4d-scripts/blob/master/quick-folder/img/open-folder.png?raw=true" alt="open-folder.png"/>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/quick-folder/img/quick-folder.png?raw=true" alt="open-folder.png"/>
 
 <br>
 
