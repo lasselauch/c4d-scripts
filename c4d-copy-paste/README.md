@@ -10,4 +10,4 @@
 
 # Watch: [CTRL-CLICK](https://raw.githubusercontent.com/lasselauch/c4d-scripts/master/c4d-copy-paste/img/c4d-copy-paste_ctrl.webm)
 
-With <code>CTRL-CLICK</code> you can select <code>Copy (converted) selected Objects</code> to convert every Object to a Polygon-Object first.
+With <code>CTRL-CLICK</code> you can <code>Copy (converted) selected Objects</code> to run <code>"Current State to Object"</code> on each Object before exporting.
