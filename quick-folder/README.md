@@ -6,10 +6,8 @@
 
 <img src="https://github.com/lasselauch/c4d-scripts/blob/master/quick-folder/img/preview.png?raw=true" alt="preview.png"/>
 
-<br>
-<br>Download or Clone the Folder <code>open-folder</code> and add it to your Script-Arsenal for C4D.
 <br><br>
-Shortcut to open your Project, Render-Folder and Open in Viewer.<br>
+Shortcut to open your Document-, Render-Folder and open your Rendering in any Viewer.<br>
 <br>
 You only need to change the path to your favourite Viewer <b>[Line:13]</b>:
 <br>
