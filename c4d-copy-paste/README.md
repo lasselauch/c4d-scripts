@@ -1,11 +1,11 @@
 # Copy/Paste between C4D-Versions:
 <p align = "center">
-<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/c4d-copy-paste-icon.png?raw=true" alt="c4d-copy-paste-icon.png"/><br><br>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/c4d-copy-paste-icon.png?raw=true" alt="c4d-copy-paste-icon.png"/><br>
 <img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/preview.png?raw=true" alt="preview.png"/><br>
-[DEFAULT-CLICK]
-<br>
+( DEFAULT-CLICK )
+<br><br>
 <img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/preview_ctrl.png?raw=true" alt="preview_ctrl.png"/><br>
-[CTRL-CLICK]
+( CTRL-CLICK )
 <br>
 </p>
 
