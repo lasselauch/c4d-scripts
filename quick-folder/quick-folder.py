@@ -2,7 +2,7 @@
 #Use at your own risk
 """
 Name-US:Quick-Folder
-Description-US:Shortcut to open your Project, Render-Folder and Open in Viewer.
+Description-US:Shortcut to open your Document, Render-Folder<br>and open your Rendering in any Viewer.
 """
 import c4d
 import os
@@ -43,7 +43,7 @@ def ActiveDoc():
     else:
         return path
 
-def OpenInVIEWER(filepath):
+def OpenInViewer(filepath):
 
     try:
         os.chdir(filepath)
@@ -54,7 +54,8 @@ def OpenInVIEWER(filepath):
         c4d.gui.MessageDialog(message)
         return
 
-    print 'Opening: "%s" in your VIEWER.' % (os.path.basename(files[0]))
+    if DEBUG:
+        print 'Opening: "%s" in your VIEWER.' % (os.path.basename(files[0]))
 
     img_path = os.path.join(filepath, files[0])
     c4d.storage.GeExecuteProgram(VIEWER, img_path)
@@ -82,11 +83,11 @@ def main():
 
     #Render-Settings | File:
     if filepath is False:
-        menu.InsData(ID+2, icon_image + 'Open: Image-Folder&d&')
-        menu.InsData(ID+3, icon_play + 'Open: Viewer&d&')
+        menu.InsData(ID+2, icon_image + 'Open: Render-Folder&d&')
+        menu.InsData(ID+3, icon_play + 'Open: Rendering&d&')
     else:
-        menu.InsData(ID+2, icon_image + 'Open: Image-Folder')
-        menu.InsData(ID+3, icon_play + 'Open: Viewer')
+        menu.InsData(ID+2, icon_image + 'Open: Render-Folder')
+        menu.InsData(ID+3, icon_play + 'Open: Rendering')
         if DEBUG:
             print "Saved File-Folder: " + filepath
 
@@ -97,7 +98,7 @@ def main():
     elif result == ID+2:
         storage.ShowInFinder(filepath)
     elif result == ID+3:
-        OpenInVIEWER(filepath)
+        OpenInViewer(filepath)
     else: return
 
 if __name__=='__main__':
