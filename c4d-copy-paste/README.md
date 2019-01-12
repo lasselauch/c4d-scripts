@@ -1,7 +1,13 @@
 # Copy/Paste between C4D-Versions:
 <p align = "center">
-<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/c4d-copy-paste-icon.png?raw=true" alt="c4d-copy-paste-icon.png"/><br>
-<br>Download or Clone the Folder <code>c4d-copy-paste</code> and add it to your Script-Arsenal for C4D.</p>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/c4d-copy-paste-icon.png?raw=true" alt="c4d-copy-paste-icon.png"/><br><br>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/preview.png?raw=true" alt="preview.png"/><br>
+[DEFAULT-CLICK]
+<br>
+<img src="https://github.com/lasselauch/c4d-scripts/blob/master/c4d-copy-paste/img/preview_ctrl.png?raw=true" alt="preview_ctrl.png"/><br>
+[CTRL-CLICK]
+<br>
+</p>
 
 ![<gif>](./img/c4d-copy-paste.gif)</br>
 
