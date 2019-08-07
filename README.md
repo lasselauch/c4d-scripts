@@ -10,6 +10,9 @@
 # [Quick-Folder](https://github.com/lasselauch/c4d-scripts/tree/master/quick-folder)
 ##### Shortcut to open your Document-, Render-Folder and open your Rendering in any Viewer.
 
+# [quickSel](https://github.com/lasselauch/c4d-scripts/tree/master/quickSel)
+##### A quick Selection-Menu for last selected Objects. Add to Hotkey (i.e. CTRL+TAB) Initial-Idea by Lars Jandel
+
 # [RS-HDRI-Link](https://github.com/lasselauch/c4d-scripts/tree/master/rs_hdrlink/)
 ##### A free HDRI-Link for C4D (Redshift only)
 ---
