@@ -48,6 +48,10 @@ def get_pluginData(docData):
     names = list()
     unique_ids = list()
 
+    if pluginData is None:
+        c4d.gui.MessageDialog("Please, select some Objects to work with.")
+        return None, None
+    
     # Loop through both Containers 0 / 1
     for i, bc in pluginData:
         # print i, bc
@@ -107,7 +111,9 @@ def main():
             set_pluginData(sel, docData)
 
     names, unique_ids = get_pluginData(docData)
-
+    if not names:
+        return
+    
     if len(names) == 2:
         a = FindObject(unique_ids[0])
         b = FindObject(unique_ids[1])
