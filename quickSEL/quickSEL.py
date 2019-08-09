@@ -3,7 +3,7 @@ Copyright: Lasse Lauch
 Written for Cinema 4D R20.059
 
 Name-US:quickSEL
-Description-US:A quick Selection-Menu for important Objects/Tags.\nAdd to Hotkey (i.e. Shift+TAB)
+Description-US:A quick Selection-Menu for last selected Objects/Tags.\nAdd to Hotkey (i.e. Shift+TAB)
 Idea by Lars Jandel
 Last Modified Date: 09/08/2019
 """
@@ -16,7 +16,6 @@ PLUGIN_ID = 1053141
 def set_pluginData(sel, docData, two_selected=False):
     myBC = c4d.BaseContainer()
     for i, obj in enumerate(sel):
-        print obj
         if two_selected:
             myBC.SetLink(1000+i, obj)
         else:
@@ -84,11 +83,11 @@ def main():
 
         if len(sel) == 2:
             set_pluginData(sel, docData, two_selected=True)
-        
+
         if pluginData:
             a = pluginData.GetLink(1000, doc)
             b = pluginData.GetLink(1001, doc)
-    
+
             if a and b:
                 if len(sel)<=2:
                     ToggleSetBit(a, b)
@@ -105,5 +104,12 @@ def main():
                     c4d.EventAdd()
                     doc.EndUndo()
 
+        if len(sel) == 0:
+            if len(pluginData) == 2:
+                a = pluginData.GetLink(1000+selection, doc)
+                if a:
+                    doc.SetSelection(a, c4d.SELECTION_NEW)
+                    c4d.EventAdd()
+                    doc.EndUndo()
 if __name__=='__main__':
     main()
