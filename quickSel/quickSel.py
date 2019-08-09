@@ -3,7 +3,7 @@ Copyright: Lasse Lauch
 Written for Cinema 4D R20.059
 
 Name-US:quickSEL
-Description-US:A quick Selection-Menu for last selected Objects/Tags.\nAdd to Hotkey (i.e. Shift+TAB)
+Description-US:A quick Selection-Menu for important Objects/Tags.\nAdd to Hotkey (i.e. Shift+TAB)
 Idea by Lars Jandel
 Last Modified Date: 09/08/2019
 """
