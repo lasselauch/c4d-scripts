@@ -105,11 +105,12 @@ def main():
                     doc.EndUndo()
 
         if len(sel) == 0:
-            if len(pluginData) == 2:
-                a = pluginData.GetLink(1000+selection, doc)
-                if a:
-                    doc.SetSelection(a, c4d.SELECTION_NEW)
-                    c4d.EventAdd()
-                    doc.EndUndo()
+            if pluginData:
+                if len(pluginData) == 2:
+                    a = pluginData.GetLink(1000+selection, doc)
+                    if a:
+                        doc.SetSelection(a, c4d.SELECTION_NEW)
+                        c4d.EventAdd()
+                        doc.EndUndo()
 if __name__=='__main__':
     main()
