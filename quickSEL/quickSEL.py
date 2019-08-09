@@ -57,15 +57,12 @@ def ToggleSetBit(a, b):
         doc.SetSelection(a, c4d.SELECTION_NEW)
 
     if a_sel and b_sel:
-        doc.AddUndo(c4d.UNDOTYPE_BITS, a)
-        a.DelBit(c4d.BIT_ACTIVE)
         doc.AddUndo(c4d.UNDOTYPE_BITS, b)
-        b.DelBit(c4d.BIT_ACTIVE)
-        b.SetBit(c4d.BIT_ACTIVE)
+        doc.SetSelection(b, c4d.SELECTION_NEW)
 
     if not a_sel and not b_sel:
         doc.AddUndo(c4d.UNDOTYPE_BITS, b)
-        b.SetBit(c4d.BIT_ACTIVE)
+        doc.SetSelection(b, c4d.SELECTION_NEW)
 
 def main():
     doc.StartUndo()
@@ -74,8 +71,12 @@ def main():
     if docData is not None:
         pluginData = docData.GetData(PLUGIN_ID)
 
-    sel = doc.GetSelection()
-
+    #Use doc.GetSelection() to include Tags..
+    #sel = doc.GetSelection()
+    
+    #Use doc.GetActiveObjects() to include Objects only.
+    sel = doc.GetActiveObjects(c4d.GETACTIVEOBJECTFLAGS_CHILDREN)
+    
     if sel:
         if len(sel) == 1:
             pass
