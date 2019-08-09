@@ -33,6 +33,11 @@ def popupMenu(docData):
     for i, (k, obj) in enumerate(pluginData):
         icon = '&i%s&' % (obj.GetType())
         name =  obj.GetName()
+        if obj.CheckType(c4d.Ttexture):
+            icon = '&i1029816&'
+            mat = obj[c4d.TEXTURETAG_MATERIAL]
+            if mat:
+                name = mat.GetName()
         menu.InsData(c4d.FIRST_POPUP_ID+i, icon+name)
 
     result = c4d.gui.ShowPopupDialog(None, menu, c4d.MOUSEPOS, c4d.MOUSEPOS, c4d.POPUP_CENTERVERT|c4d.POPUP_CENTERHORIZ|c4d.POPUP_EXECUTECOMMANDS)
