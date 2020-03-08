@@ -123,7 +123,7 @@ def main():
 
     #PRE R18 VERSION ( INSERT ONLY OBJECTS )
     if c4d.GetC4DVersion() <= 18011:
-        gui.MessageDialog("I'm sorry, Color-Swatches haven't been introduced in your C4D-Version.\nYou need at least C4D R18! I'll just add some Cubes with Colors... Okay!?")
+        c4d.gui.MessageDialog("I'm sorry, Color-Swatches haven't been introduced in your C4D-Version.\nYou need at least C4D R18! I'll just add some Cubes with Colors... Okay!?")
         InsertObjects(name, colors)
         return
 
