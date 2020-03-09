@@ -9,12 +9,7 @@ Description-US:Copy from "My Themes" as "XML"!\n[DEFAULT] Import Swatches + Refe
 import c4d
 import xml.etree.ElementTree as ET
 
-try:
-    import maxon
-except:
-    pass
-
-def GetModifiers():
+def get_modifiers():
     bc = c4d.BaseContainer()
     ctrl, shift, alt = False, False, False
     if c4d.gui.GetInputState(c4d.BFM_INPUT_KEYBOARD, c4d.BFM_INPUT_CHANNEL, bc):
@@ -90,6 +85,8 @@ def InsertObjects(name, colors):
     doc.EndUndo()
 
 def convert_to_maxon(colors):
+    import maxon
+
     result = list()
 
     for c in colors:
@@ -108,7 +105,7 @@ def OpenWebsite(url):
     webbrowser.open_new_tab(url)
 
 def main():
-    ctrl, shift, alt = GetModifiers()
+    ctrl, shift, alt = get_modifiers()
     if ctrl:
         OpenWebsite('https://color.adobe.com/create/color-wheel/')
         return
