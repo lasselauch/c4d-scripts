@@ -1,6 +1,6 @@
 #www.lasselauch.com/lab/
 #Use at your own risk
-#Last-Modified: 08/11/2018
+#Last-Modified: 03/17/2022
 """
 Name-US:Paste Points from Houdini Geometry Spreadsheet
 Description-US:#www.lasselauch.com/lab/
@@ -23,7 +23,7 @@ def PointListFromClipboard():
     length = len(x)
     # at least one list has a different length
     if any(len(lst) != length for lst in [y, z]):
-        print """+++ Bad Formatting: +++\nX: %s Number of Points\nY: %s Number of Points\nZ: %s Number of Points\n""" % (len(x), len(y), len(z))
+        print("""+++ Bad Formatting: +++\nX: %s Number of Points\nY: %s Number of Points\nZ: %s Number of Points\n""" % (len(x), len(y), len(z)))
         return None
 
     point_list = list()

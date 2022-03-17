@@ -1,6 +1,6 @@
 #www.lasselauch.com/lab/
 #Use at your own risk
-#Last-Modified: 25/10/2018
+#Last-Modified: 03/17/2022
 """
 Name-US:Copy Spline-Points for Houdini Curves-Node
 Description-US:#www.lasselauch.com/lab/
@@ -41,7 +41,7 @@ def main():
 
         #Copy Code to Clipboard
         c4d.CopyStringToClipboard(code)
-        print "Spline-Info copied to Clipboard..!"
+        print("Spline-Info copied to Clipboard..!")
 
     except:
         message = "...N O T  a  S p l i n e  ! ! !"
